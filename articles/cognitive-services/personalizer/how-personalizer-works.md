@@ -63,9 +63,9 @@ Personalizer is based on cutting-edge science and research in the area of [Reinf
 
     Your specific application may have different context information. 
 
-* **[Features](concepts-features.md)**: A unit of information about a content item or a user context.
+* **[Features](concepts-features.md)**: A unit of information about a content item (Actions) or a user context.
 
-* **Reward**: A measure of how the user responded to the Rank API returned action, as a score between 0 and 1. The 0 to 1 value is set by your business logic, based on how the choice helped achieve your business goals of personalization. 
+* **Reward**: A measure of how the user responded to the Rank API returned action, as a score between 0 and 1. The 0 to 1 value is set by your business logic, based on how the choice helped achieve your business goals of personalization and is represented as a float. 
 
 * **Exploration**: The Personalizer service is exploring when, instead of returning the best action, it chooses a different action for the user. The Personalizer service avoids drift, stagnation, and can adapt to ongoing user behavior by exploring. 
 
